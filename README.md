@@ -1,7 +1,7 @@
 # igaku
 discord.pyとdiscord.py-selfのデバッグツール
 
-discord.py<br>
+# discord.pyの場合
 main.py
 ```
 import discord
@@ -31,13 +31,13 @@ async def on_ready():
 @bot.event
 async def setup_hook():
     await bot.load_extension("cog")
-    await bot.load_extension("igaku-self")
+    await bot.load_extension("igaku")
 
 bot.run("Token")
 ```
 にする<br>
 
-discord.py-self<br>
+# discord.py-selfの場合<br>
 main.py
 ```
 import discord
@@ -66,3 +66,6 @@ async def setup_hook():
 bot.run("Token")
 ```
 にする
+
+<br>
+main.pyと同じ階層にigakuかigaku-selfを置く
